@@ -1,0 +1,34 @@
+<div class="container"> 
+    <table>
+        <tr>
+            <th>id</th>
+            <th>cobertura</th>
+            <th>raça</th>
+            <th>brinco</th>
+            <th>idade</th>
+            <th>data</th>
+            <th>reprodutor</th>
+            <th>peso</th>
+            <th>ecc</th>
+            <th>tipo_acasalamento</th>
+            <th>tipo_estro</th>
+        </tr>
+
+        {% for usuario in usuarios %}    
+
+        <tr>
+            <td>{{usuario.id}}</td>
+            <td>{{usuario.cobertura}}</td>
+            <td>{{usuario.raca}}</td>
+            <td>{{usuario.brinco}}</td>
+            <td>{{usuario.idade}}</td>
+            <td>{{usuario.data}}</td>
+            <td>{{usuario.reprodutor}}</td>
+            <td>{{usuario.peso}}</td>
+            <td>{{usuario.ecc}}</td>
+            <td>{{usuario.tipo_acasalamento}}</td>
+            <td>{{usuario.tipo_estro}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
